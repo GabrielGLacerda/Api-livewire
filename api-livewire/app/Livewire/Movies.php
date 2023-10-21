@@ -8,7 +8,7 @@ use Livewire\Component;
 class Movies extends Component
 {
 
-    public $movies = new MovieService();
+    // public $movies = new MovieService();
 
     public function render()
     {

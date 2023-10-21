@@ -1,5 +1,5 @@
 <div>
-    @foreach ($movies as $movie)
+    {{-- @foreach ($movies as $movie)
         $movie
-    @endforeach
+    @endforeach --}}
 </div>

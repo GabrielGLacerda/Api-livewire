@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\api;
 use App\Livewire\Header;
 use Illuminate\Support\Facades\Route;
 
@@ -19,3 +20,4 @@ Route::get('/', function () {
 });
 
 Route::get('/counter', Header::class);
+Route::get('/api', [api::class, 'teste']);
