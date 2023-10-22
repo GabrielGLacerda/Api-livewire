@@ -16,16 +16,14 @@ class Titles {
     }
 
     public function get(): Collection {
-        return $this->transform(
-                    $this->service
-                        ->api
-                        ->get('/titles')
-                        ->json('data')
-        );
+        return $this->service
+                    ->api
+                    ->get('/titles')
+                    ->collect();
         
     }
 
-    private function transform(mixed $json): Collection {
-        return collect($json)->map(fn ($movie) => new Movie($movie));
-    }
+    // private function transform(mixed $json): Collection {
+    //     return collect($json)->map(fn ($movie) => new Movie($movie));
+    // }
 }

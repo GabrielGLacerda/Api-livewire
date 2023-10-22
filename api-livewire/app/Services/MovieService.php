@@ -21,9 +21,9 @@ class MovieService {
     }
 
     // Test function
-    public function getM() {
-        return $this->api->get('/titles')->collect();
-    }
+    // public function getM() {
+    //     return $this->api->get('/titles')->collect();
+    // }
 
 }
 
