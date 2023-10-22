@@ -25,7 +25,7 @@ class Titles {
         
     }
 
-    private function transform(mixed $json):Collection {
+    private function transform(mixed $json): Collection {
         return collect($json)->map(fn ($movie) => new Movie($movie));
     }
 }

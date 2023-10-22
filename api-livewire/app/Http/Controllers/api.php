@@ -10,7 +10,8 @@ class api extends Controller
     public function teste() {
         $service = new MovieService();
   
-        $json = $service->movie()->get();
-        dd($json);
+        return  $json = $service->movie()->get();
+        // return $json = $service->getM();
+        // dd($json);
     }
 }
